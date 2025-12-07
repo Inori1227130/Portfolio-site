@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+
+html {
+    font-size: 100%;
+}
+
+.page-header {
+    display: flex;
+    background-color: #745024;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.titlelogo {
+    color: #f4e4c1; 
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main-navbar {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    margin: 30px;
+}
+
+.sentense {
+    margin: 30px;
+}
+
+.more-button {
+    margin: 50px 30px 60px 730px;
+    background-color: #A5E5BE;
+}
+
+body {
+    background-color:#FFEAC2 ;
+    margin: 0%;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color: #f4e4c1;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.main-navbar a:hover {
+  color: #ffb347;
+}
+
+.backtotop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none; /* 最初は非表示 */
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease;
+}
+
+.backtotop.show {
+    display: flex;
+    opacity: 1;
+}
+
+.url a {
+    text-decoration: none;
+    color: #f4e4c1;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.url a:hover {
+  color: #ffb347;
+}
+
+.footer-page {
+    display: flex;
+    background-color: #745024;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.footer-sentense {
+    color: #f4e4c1; 
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+
+  /* header */
+  .main-navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .titlelogo {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  /* 文字 */
+  .welcome {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .section {
+    font-size: 1.3rem;
+  }
+
+  .sentense {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  /* 余白調整 */
+  .body {
+    padding: 10px;
+  }
+
+  .more-button {
+    text-align: center;
+  }
+
+
+}

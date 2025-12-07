@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+        <link rel="stylesheet" href="./css/toppage.css">
+
+    </head>
+
+    <body>                                                   
+        <header class="page-header">
+            <h1 class="titlelogo">Mana's Portforio</h1>
+
+            <nav>
+                <ul class="main-navbar">
+                    <li><a href="toppage.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container">
+
+          <img src="img/topicon.jpeg" alt="Inori's Icon" class="fade-icon">
+
+          <h1 class="welcome">Welcome to my portfolio</h1>
+
+          <h2 class="section">About</h2>
+          <div class="intro">
+          <p class="sentense">まなと申します。工業系の大学に通っており、数学やいくつかのプログラミング言語について学んでおります。</p>
+          <button  class="more-button" onclick="window.location.href='about.html'">More</button>
+          </div>
+
+          <h2 class="section">Works</h2>
+          <div class="intro">
+          <p class="sentense">今回は自身の昔の実体験などを基にWebサイトやWebアプリを作成しました。</p>
+              <h2 class="section">ポートフォリオサイト</h2>
+              <p class="sentense">自身のスキル・作品を紹介するためのWebサイトです。</p>
+              <img src="img/portfolio.jpg" alt="CSV分析の写真" class="work_portfolio">
+
+              <h2 class="section">交通事故分析サイト</h2>
+              <p class="sentense">CSVファイルとFlask等を用いて2023年度の全国の交通事故を条件別で分析してみました。</p>
+              <img src="img/csv_traffic.jpg" alt="CSV分析の写真" class="work_csv">
+      
+        <button class="more-button" onclick="window.location.href='works.html'">More</button>
+        </div>
+
+        <h2 class="section">Contact</h2>
+        <div class="intro">
+        <p class="sentense">ご覧いただきありがとうございました。何かございましたら下記のリンクからご連絡の程よろしくお願いいたします。</p>
+        <button class="more-button" onclick="window.location.href='contact.html'">More</button>
+        </div>
+        
+
+        <button id="backToTop" class="backtotop">TOP</button>
+        <script>
+          const backToTop = document.getElementById('backToTop');
+
+          window.addEventListener('scroll', () => {
+          if (window.scrollY > 300) {
+            backToTop.classList.add('show');
+          } else {
+            backToTop.classList.remove('show');
+          }
+        });
+
+        backToTop.addEventListener('click', () => {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+        </script>
+
+
+        </div>
+
+        <footer class="footer-page">
+            <div class="footer-sentense">
+              <li>mail  →mikatonama@gmail.com</li>
+              <li class="url">GitHub→<a href="https://github.com/Inori1227130/Portfolio" target="_blank" rel="noopener noreferrer">https://github.com/Inori1227130/Portfolio</a></li>
+              </div>
+        </footer>
+
+    </body>
+</html>

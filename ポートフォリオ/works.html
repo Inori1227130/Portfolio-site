@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Works</title>
+        <link rel="stylesheet" href="./css/works.css">
+
+    </head>
+
+    <body>
+        <header class="page-header">
+            <h1 class="titlelogo">Mana's Portforio</h1>
+
+            <nav>
+                <ul class="main-navbar">
+                    <li><a href="toppage.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h2 class="section">Works</h2>
+        <p class="sentense">今までの経験や学習を活かして大学や独学で作品を制作しました。</p>
+
+        <div class="works-container">
+
+            <div class="work-card">
+              <h2 class="work-section">ポートフォリオサイト</h2>
+              <p class="work-sentense">自身のスキル・作品を紹介するためのWebサイトです。</p>
+              <img src="img/portfolio.jpg" alt="CSV分析の写真" class="work_portfolio">
+              <section>
+                <h2>使用技術</h2>
+                <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                </ul>
+                </section>
+              <button  class="more-button" onclick="window.location.href='portfolio_work.html'">More</button>
+            </div>
+
+            <div class="work-card">
+              <h2 class="work-section">交通事故分析サイト</h2>
+              <p class="work-sentense">CSVファイルとFlask等を用いて2023年度の全国の交通事故を条件別で分析してみました。</p>
+              <img src="img/csv_traffic.jpg" alt="CSV分析の写真" class="work_csv">
+              <section>
+                <h2>使用技術</h2>
+                <ul>
+                <li>Flask</li>
+                <li>CSV分析</li>
+                <li>Leaflet</li>
+                </ul>
+                </section>
+              <button  class="more-button" onclick="window.location.href='csv_work.html'">More</button>
+            </div>
+
+            <div class="work-card">
+              <h2 class="work-section">チャットアプリ</h2>
+              <p class="work-sentense">Djangoを用いてチャットアプリを製作しました。</p>
+              <img src="img/chatapp.jpg" alt="チャットアプリの写真" class="work_chat">
+              <section>
+                 <h2>使用技術</h2>
+                 <ul>
+                <li>Django</li>
+                <li>Ajax</li>
+                <li>JSON</li>
+                </ul>
+                </section>
+              <button  class="more-button" onclick="window.location.href='chat_work.html'">More</button>
+            </div>
+
+            <div class="work-card">
+              <h2 class="work-section">デジタル名刺</h2>
+           <p class="work-sentense">FigmaとQRコードを用いてデジタル名刺を作成しました。</p>
+           <img src="img/meisi.png" alt="デジタル名刺の写真" class="work_meisi">
+           <section>
+            <h2>使用技術</h2>
+            <ul>
+                <li>Figma</li>
+                <li>QRコード</li>
+            </ul>
+            </section>
+           <button  class="more-button" onclick="window.location.href='maisi_work.html'">More</button>
+            </div>
+
+            <div class="work-card">
+           <h2 class="work-section">デジタルフライヤー</h2>
+           <p class="work-sentense">Figmaを用いてデジタルフライヤーを作成しました。</p>
+           <img src="img/egg.png" alt="卵のポスターの写真"  class="work_egg">
+           <section>
+            <h2>使用技術</h2>
+            <ul>
+                <li>Figma</li>
+                <li>QRコード</li>
+            </ul>
+            </section>
+           <button  class="more-button" onclick="window.location.href='egg_work.html'">More</button>
+            </div>
+
+        </div>
+
+        <button id="backToTop" class="backtotop">TOP</button>
+        <script>
+          const backToTop = document.getElementById('backToTop');
+
+          window.addEventListener('scroll', () => {
+          if (window.scrollY > 300) {
+            backToTop.classList.add('show');
+          } else {
+            backToTop.classList.remove('show');
+          }
+        });
+
+        backToTop.addEventListener('click', () => {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+        </script>
+
+        <footer class="footer-page">
+            <div class="footer-sentense">
+              <li>mail  →mikatonama@gmail.com</li>
+              <li class="url">GitHub→<a href="https://github.com/Inori1227130/Portfolio" target="_blank" rel="noopener noreferrer">https://github.com/Inori1227130/Portfolio</a></li>
+              </div>
+        </footer>
+
+    </body>
+</html>

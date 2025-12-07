@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>About</title>
+        <link rel="stylesheet" href="./css/about.css">
+    </head>
+
+    <body>
+        <header class="page-header">
+            <h1 class="titlelogo">Mana's Portfolio</h1>
+
+            <nav>
+                <ul class="main-navbar">
+                    <li><a href="toppage.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            </header>
+
+            <img src="img/topicon.jpeg" alt="Inori's Icon" class="fade-icon">
+
+            <h2 class="section"> About</h2>
+            <div class="skill-box">
+              <p class="sentense">初めまして、まなと申します。
+               工業系の大学に通いながら主に数学とプログラミングを学んでおります。
+               最近は誰もが利用しやすく優しいWebサイトの作成を中心に行っております。
+               PythonやC言語などは大学の講義内で基礎内容を理解しております。一方、HTML・CSS・JavaScript・PHPなどははポートフォリオ作成時点では講義でやっていなかったため、独学で理解を進めております。
+               音楽を聴くことが好きです。</p>
+            </div>
+
+            <h2 class="section">Skill</h2>
+
+            <h3 class="section">HTML・CSS</h3>
+            <div class="skill-box">        
+                <ul>
+                    <li>基本的なコーティング</li>
+                    <li>レスポンシブ対応(PC・スマートフォン等)</li>
+                    <li>アニメーション表現</li>                    
+                </ul>
+            </div>
+
+            <h3 class="section">JavaScript</h3>
+            <div class="skill-box">
+                <ul>
+                    <li>基本的な文法</li>
+                    <li>イベント処理</li>
+                </ul>
+            </div>
+
+            <h3 class="section">Python・C言語</h3>
+            <div class="skill-box">
+                <ul>
+                    <li>大学で基本的な文法を学習</li>
+                    <li>簡単なプログラムの作成</li>
+                    <li>簡単なプロジェクトの作成</li>
+                </ul>
+            </div>
+
+            <h3 class="section">Figma</h3>
+            <div class="skill-box">
+                <ul>
+                    <li>ポートフォリオの構成</li>
+                    <li>デジタルフライヤーの作成</li>
+                    <li>デジタル名刺の作成</li>
+                </ul>
+            </div>
+
+            <h3 class="section">SQL</h3>
+            <div class="skill-box">
+                <ul>
+                    <li>SQLiteでデータベースの管理</li>
+                </ul>
+            </div>
+
+            <h3 class="section">資格試験</h3>
+            <div class="skill-box">
+                    <ul>
+                        <li>ITパスポート(取得見込み)</li>
+                    </ul>
+            </div>
+
+            <button id="backToTop" class="backtotop">TOP</button>
+        <script>
+          const backToTop = document.getElementById('backToTop');
+
+          window.addEventListener('scroll', () => {
+          if (window.scrollY > 300) {
+            backToTop.classList.add('show');
+          } else {
+            backToTop.classList.remove('show');
+          }
+        });
+
+        backToTop.addEventListener('click', () => {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+        </script>
+
+        <footer class="footer-page">
+            <div class="footer-sentense">
+              <li>mail  →mikatonama@gmail.com</li>
+              <li class="url">GitHub→<a href="https://github.com/Inori1227130/Portfolio" target="_blank" rel="noopener noreferrer">https://github.com/Inori1227130/Portfolio</a></li>
+            </div>
+        </footer>
+
+    </body>
+</html>

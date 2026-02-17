@@ -27,6 +27,13 @@ html {
     padding: 0;
 }
 
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
 .section {
     margin: 30px;
 }
@@ -97,7 +104,7 @@ body {
     background-color: #745024;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 25px;
+    padding: 10px 30px;
 }
 
 .footer-sentense {

@@ -63,6 +63,7 @@ body {
     padding: 30px;
     margin: 100px;
     border-radius: 20px;
+    max-width: 600px;
 }
 
 .form-box label {
@@ -149,7 +150,7 @@ body {
   }
 
   /* 余白調整 */
-  .body {
+  body {
     padding: 10px;
   }
 
